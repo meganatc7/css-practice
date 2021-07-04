@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/681190e1a5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav_logo">
+      <i class="fab fa-accusoft"></i>
+      <a href="/">Coding</a>
+    </div>
+    <ul class="nav_menu">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">MyPage</a></li>
+      <li><a href="">FAQ</a></li>
+    </ul>
+    <div class="nav_icon">
+      <li class="fab fa-accusoft"></li>
+      <li class="fab fa-accusoft"></li>
+    </div>
+    <a href="" class="nav_toggleBtn"><i class="fas fa-hamburger"></i></a>
+  </nav>
+  <div class="box"></div>
+  <script>
+    const toggleBtn = document.querySelector('.nav_toggleBtn')
+    const menu = document.querySelector('.nav_menu')
+    const icon = document.querySelector('.nav_icon')
+
+    toggleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      menu.classList.toggle('active');
+      icon.classList.toggle('active');
+    })
+  </script>
+</body>
+</html>
